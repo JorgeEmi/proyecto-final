@@ -1,6 +1,7 @@
 <%@page import="java.util.Properties"%>
 <%@page import="java.sql.*"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html class="h-full bg-gray-100">
     <head>
@@ -106,7 +107,7 @@
                                                         </div><br>
                                                         <form action="update_eng.jsp" method="post">
                                                         <input type="hidden" name="id_case" value="<%= request.getParameter("id_case")%>">  
-                                                        <input type="hidden" name="case_statusM" value="En Soporte">
+                                                        <input type="hidden" name="case_statusM" value="En Solución">
                                                         <input type="hidden" name="case_areaM" value="Soporte">
                                                         <label for="id_user">Seleccione un ingeniero de Soporte:</label>
                                                         <select id="id_user" name="id_user">
